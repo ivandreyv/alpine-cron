@@ -1,0 +1,10 @@
+version: '3.1'
+
+services:
+ alpinecron:
+  image: ivandreyv/alpine-cron:1 
+  container_name: alpinecron
+  volumes:
+   - ./bin:/usr/local/bin
+  environment:
+   - TZ=Europe/Kiev
